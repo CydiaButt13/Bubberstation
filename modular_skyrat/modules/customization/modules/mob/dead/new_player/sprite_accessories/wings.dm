@@ -200,6 +200,10 @@
 	name = "Tiny-Feathery"
 	icon_state = "tinyfeather"
 
+/datum/sprite_accessory/wings/mammal/robotic/shuttle
+	name = "Shuttle Wings"
+	icon_state = "shuttle"
+
 /*
 *	LOW WINGS
 */

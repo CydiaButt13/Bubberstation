@@ -19,3 +19,23 @@ INTERN_THRESHOLD_COMMAND 20
 
 ## Default Storyteller. Comment out to enable voting.
 DEFAULT_STORYTELLER /datum/storyteller/extended
+
+### Character size related stuff ###
+## The ones settable on the character page and other easily accessible ways
+BODY_SIZE_PREF_MAX 2
+BODY_SIZE_PREF_MIN 0.25
+
+## Sizegun limits
+BODY_SIZE_SIZEGUN_MAX 2
+BODY_SIZE_SIZEGUN_MIN 0.25
+
+## Absolute limits
+BODY_SIZE_MAX 8
+BODY_SIZE_MIN 0.25
+
+## Bodysize slowdown limit. Characters below this size will start suffering from lowered movespeed.
+## Set to 0 to disable.
+BODY_SIZE_SLOWDOWN_START 0.75
+## Bodysize slowdown factor. How much does size affect the movespeed? The higher this is the lower the speed becomes.
+BODY_SIZE_SLOWDOWN_FACTOR 6
+

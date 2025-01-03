@@ -2485,12 +2485,12 @@
 		if(200 to INFINITY)
 			newsize = 3.5*RESIZE_DEFAULT_SIZE
 
-	affected_mob.update_transform(newsize/current_size)
+	affected_mob.update_size_by_percent(newsize/current_size)//Bubber edit - sizecode original - affected_mob.update_transform(newsize/current_size)
 	current_size = newsize
 
-/datum/reagent/growthserum/on_mob_end_metabolize(mob/living/affected_mob)
+/datum/reagent/growthserum/on_mob_end_metabolize(mob/living/carbon/affected_mob)
 	. = ..()
-	affected_mob.update_transform(RESIZE_DEFAULT_SIZE/current_size)
+	affected_mob.update_size_by_percent(RESIZE_DEFAULT_SIZE/current_size)//Bubber edit - sizecode original -  affected_mob.update_transform(RESIZE_DEFAULT_SIZE/current_size)
 	current_size = RESIZE_DEFAULT_SIZE
 
 /datum/reagent/growthserum/used_on_fish(obj/item/fish/fish)
